@@ -1,0 +1,3 @@
+# Blueboard.cz Home Assistant Addons
+
+...

@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Blueboard Home Assistant add-on repository
+url: 'https://github.com/blueboard-cz/home-assistant-addons'
+maintainer: Jiří Zralý <jirka@blueboard.cz>
