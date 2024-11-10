@@ -8,4 +8,27 @@ arch:
   - aarch64
   - amd64
   - i386
-init: true  
+startup: services
+homeassistant: true
+hassio_role: homeassistant
+
+options: {}
+
+schema: {}
+
+init_commands:
+  - |
+    if ! grep -q 'http:' /config/configuration.yaml; then
+      echo -e '\nhttp:\n  use_x_forwarded_for: true\n  trusted_proxies:\n    - 178.251.187.18' >> /config/configuration.yaml
+    else
+      if ! grep -q 'use_x_forwarded_for: true' /config/configuration.yaml; then
+        sed -i '/http:/a\  use_x_forwarded_for: true' /config/configuration.yaml
+      fi
+      if ! grep -q 'trusted_proxies:' /config/configuration.yaml; then
+        sed -i '/use_x_forwarded_for: true/a\  trusted_proxies:\n    - 178.251.187.18' /config/configuration.yaml
+      fi
+    fi
+
+run_commands:
+  - |
+    echo "Trusted proxies configuration has been updated."
