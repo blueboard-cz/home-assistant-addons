@@ -1,6 +1,6 @@
 name: HA Remote Installer
 version: "1.0"
-slug: ha_remote_installer
+slug: ha_remote
 description: "Addon to install Wireguard-client and modify HA configuration"
 arch:
   - armhf
