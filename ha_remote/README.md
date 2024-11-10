@@ -2,8 +2,4 @@
 
 ## Installation
 
-  To install this addon in your Home Assistant instance, click the link below:
-
-  [![Open your Home Assistant instance and install the add-on](https://my.home-assistant.io/badges/supervisor_add_addon.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon/?repository_url=https://github.com/blueboard-cz/home-assistant-addons&addon=ha_remote)
-
-  https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/blueboard-cz/home-assistant-addons&addon=ha_remote
+  [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fblueboard-cz%2Fhome-assistant-addons&addon=ha_remote)
